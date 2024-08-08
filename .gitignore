@@ -1,0 +1,22 @@
+preprocessed_data/BeRfiPl_labels/
+preprocessed_data/SmA/
+preprocessed_data/tank_simulation/
+
+# !preprocessed_data/BeRfiPl/.gitkeep
+# !preprocessed_data/SmA/.gitkeep
+# !preprocessed_data/SWaT/.gitkeep
+# !preprocessed_data/tank_simulation/.gitkeep
+
+raw_data/BeRfiPl/
+raw_data/SmA/
+raw_data/SWaT/
+!raw_data/BeRfiPl/.gitkeep
+!raw_data/SmA/.gitkeep
+!raw_data/SWaT/.gitkeep
+
+
+lightning_logs/
+__pychache__/
+#scaler/
+__pycache__/
+*.csv

@@ -1,0 +1,13 @@
+batch_size: 256
+beta: 0.1
+enc_out_dim: 10
+hidden_size: 10
+input_size: 3
+latent_dim: 5
+learning_rate: 0.001
+num_workers: 20
+number_timesteps: 10
+rnn_layers: 1
+rnn_models: true
+seq_len: 10
+valid_split: 0.2
