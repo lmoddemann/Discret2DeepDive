@@ -4,7 +4,7 @@ from utils import standardize_data
 import pandas as pd 
 from torch.utils.data import DataLoader, Dataset
 import pytorch_lightning as pl
-from utils import preprocess_data, preprocess_data_artificial, preprocess_data_siemens, preprocess_data_siemens_noscaler, preprocess_data_simu_tank
+from utils import preprocess_data
 import os
 from pathlib import Path
 
@@ -51,16 +51,12 @@ class DataModule(pl.LightningDataModule):
         elif self.dataset_name == 'siemens_discrompa':
             path = os.path.expanduser(f'~/{str(Path.cwd().relative_to(Path.home()))}/preprocessed_data/SmA/id1_norm.csv')
             df = pd.read_csv(f'{path}').drop(columns=['CuStepNo ValueY']).reset_index(drop=True)
-
-        elif self.dataset_name == 'siemens_discrompa_noscaler':
-            _, data, _, _, _ = preprocess_data_siemens_noscaler('siemens')
-            df = pd.DataFrame(data)
             
         elif self.dataset_name == 'BeRfiPl_ds1c':
             df = pd.read_csv('preprocessed_data/BeRfiPl/ds1c.csv', index_col=0).reset_index(drop=True)
 
         elif self.dataset_name == 'Tank_normal':
-            df = pd.read_csv('preprocessed_data/tank_simulation/norm.csv').reset_index(drop=True).iloc[1000:, :3]
+            df = pd.read_csv('preprocessed_data/tank_simulation/norm_long.csv').reset_index(drop=True).iloc[1000:, :3]
 
         elif self.dataset_name == 'Tank_q1fault':
             df = pd.read_csv('preprocessed_data/tank_simulation/q1_faulty.csv').reset_index(drop=True).iloc[:, :3]

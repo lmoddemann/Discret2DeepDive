@@ -10,7 +10,7 @@ from pytorch_lightning.callbacks import EarlyStopping, ModelCheckpoint
 
 from seqcat_experiments_tool import *
 from seqcat_datamodule import DataModule
-from utils import preprocess_data, preprocess_data_artificial, preprocess_data_siemens, preprocess_data_simu_tank
+from utils import preprocess_data
 from utils import standardize_data
 pl.seed_everything(123)
 

@@ -1,0 +1,12 @@
+v12 AND q1 AND v23 IMPLIES aaaaaaaaaaab
+v12 AND v3 IMPLIES aaaaaaaaaaba
+q1 AND v12 AND v23 IMPLIES aaaaaaaaabaa
+q1 AND v12 IMPLIES aaaaaaaabaaa
+v12 AND q1 AND v23 IMPLIES aaaaaaabaaaa
+v3 AND v23 IMPLIES aaaaaabaaaaa
+v12 AND q1 IMPLIES aaaaabaaaaaa
+v12 AND q1 IMPLIES aaaabaaaaaaa
+v12 AND q1 IMPLIES aaabaaaaaaaa
+v23 AND v12 AND v3 IMPLIES aabaaaaaaaaa
+v12 AND v3 AND v23 IMPLIES abaaaaaaaaaa
+v3 AND v23 IMPLIES baaaaaaaaaaa

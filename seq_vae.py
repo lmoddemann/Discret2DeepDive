@@ -5,14 +5,12 @@ import numpy as np
 from pytorch_lightning import Callback
 from pytorch_lightning.loggers import TensorBoardLogger
 from pytorch_lightning.callbacks import EarlyStopping
-from seq_vae_experiments_tool import *
-from seq_datamodule import DataModule
-from utils import preprocess_data, preprocess_data_artificial, preprocess_data_siemens, preprocess_data_simu_tank
 from sklearn.model_selection import train_test_split
-from utils import standardize_data
-
 import pandas as pd
 
+from seq_vae_experiments_tool import *
+from seq_datamodule import DataModule
+from utils import standardize_data, preprocess_data
 pl.seed_everything(123)
 
 class RNNEncoder(nn.Module):
@@ -118,8 +116,6 @@ class seq_vae(pl.LightningModule):
             
         self.fc_mu = nn.Linear(hidden_size, latent_dim)
         self.fc_var = nn.Linear(hidden_size, latent_dim)
-
-        # For the gaussian likelihood
         self.log_scale_diag = nn.Parameter(torch.zeros(seq_len * input_size))
 
     def configure_optimizers(self):

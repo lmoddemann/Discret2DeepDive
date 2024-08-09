@@ -1,0 +1,1 @@
+{"aaaaaaaaaaab": ["0"], "aaaaaaaaaaba": ["0"], "aaaaaaaaabaa": ["0"], "aaaaaaaabaaa": ["0"], "aaaaaaabaaaa": ["0"], "aaaaaabaaaaa": ["0"], "aaaaabaaaaaa": ["0"], "aaaabaaaaaaa": ["0"], "aaabaaaaaaaa": ["0"], "aabaaaaaaaaa": ["0"], "abaaaaaaaaaa": ["0"], "baaaaaaaaaaa": ["0"]}

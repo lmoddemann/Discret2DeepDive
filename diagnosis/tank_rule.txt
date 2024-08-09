@@ -1,0 +1,12 @@
+dummy IMPLIES aaaaaaaaaaab
+dummy IMPLIES aaaaaaaaaaba
+dummy IMPLIES aaaaaaaaabaa
+dummy IMPLIES aaaaaaaabaaa
+dummy IMPLIES aaaaaaabaaaa
+dummy IMPLIES aaaaaabaaaaa
+dummy IMPLIES aaaaabaaaaaa
+dummy IMPLIES aaaabaaaaaaa
+dummy IMPLIES aaabaaaaaaaa
+dummy IMPLIES aabaaaaaaaaa
+dummy IMPLIES abaaaaaaaaaa
+dummy IMPLIES baaaaaaaaaaa
