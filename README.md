@@ -1,6 +1,5 @@
-# ETFA_Discret2DeepDive
-
-# Discret2DeepDive - Discretization for automated consistency based diagnosis
+# Discret2DeepDive
+## Extracting Knowledge using Machine Learning for Anomaly Detection and Root-Cause Diagnosis
 
 ## First steps 
 At the start, take a look at the instructions in the notebook file named "prepare_datasets.ipynb". 
