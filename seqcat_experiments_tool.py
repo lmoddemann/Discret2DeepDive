@@ -30,7 +30,7 @@ def make_grid():
                 "NUM_WORKERS" : 20,
                 "CATEGORICAL_DIM" : 12, 
                 "ENC_OUT_DIM": 64, 
-                "IN_DIM" : 104, #39 for siemens,  154 for berfipl normal, 100 for berfipl labeled
+                "IN_DIM" : 104, 
                 "HIDDEN_DIM" : 32, 
                 "RNN_MODELS" : True,
                 "RNN_LAYERS" : 1,
@@ -49,7 +49,7 @@ def experiments_to_json(experiment_dict: dict):
     :return: .json file containing the dictionary of hyperparameters
     """
     experiments = experiment_dict
-    with open("../experiments_embed.json", "w") as json_file:
+    with open("experiments_embed.json", "w") as json_file:
         json.dump(experiments, json_file, indent=4)
     print("experiments.json was created")
     return
@@ -62,7 +62,7 @@ def load_experiments(modus='run'):
     :return: hparam <- dictionary with the content of the .json file
     """
     if "run" in modus:
-        with open("../experiments_embed.json") as json_file:
+        with open("experiments_embed.json") as json_file:
             hparam = json.load(json_file)
     if "test" in modus:
         with open("testhparams.json") as json_file:
